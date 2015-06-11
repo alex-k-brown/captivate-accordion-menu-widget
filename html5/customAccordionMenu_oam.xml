@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget name="customAccordionMenu" id="com.liftmedia.widgets.customAccordionMenu"
+        spec="0.1b" jsClass='runAccordion' sandbox='true' width='214' height='20'
+        xmlns="http://openajax.org/metadata">
+    <!-- Required tag specifies any external depencies your widget might have such as images, jQuery etc, see http://helpx.adobe.com/captivate/using/create-wdgt-files.html -->
+    <requires>
+
+    </requires>
+    <!-- Main widget JS file -->
+    <javascript src="js/customAccordionMenu.js"/>
+    <!-- Properties tag currently not supported -->
+    <properties>
+
+    </properties>
+    <content type='fragment'>
+        <![CDATA[
+            <style>
+                .AccordionTitle, .AccordionContent, .AccordionContainer
+                {
+                  position:relative;
+                  width:200px;
+                }
+
+                .AccordionTitle
+                {
+                  height:20px;
+                  overflow:hidden;
+                  cursor:pointer;
+                  font-family:Arial;
+                  font-size:8pt;
+                  font-weight:bold;
+                  vertical-align:middle;
+                  text-align:center;
+                  background-repeat:repeat-x;
+                  display:table-cell;
+                  background-image:url('http://tech.pro/_sotc/sites/default/files/108/images/title_repeater.jpg');
+                  -moz-user-select:none;
+                }
+
+                .AccordionContent
+                {
+                  height:0px;
+                  overflow:auto;
+                  display:none;
+                }
+
+                .AccordionContainer
+                {
+                  border-top: solid 1px #C1C1C1;
+                  border-bottom: solid 1px #C1C1C1;
+                  border-left: solid 2px #C1C1C1;
+                  border-right: solid 2px #C1C1C1;
+                }
+            </style>
+
+            <div style="height:310px;" >
+            <div id="AccordionContainer" class="AccordionContainer">
+              <div><div id="accordion1" class="AccordionTitle"onselectstart="return false;">Accordion 1</div></div>
+              <div id="Accordion1Content" class="AccordionContent">I Am Accordion 1.</div>
+              <div><div id="accordion2" class="AccordionTitle"onselectstart="return false;">Accordion 2</div></div>
+              <div id="Accordion2Content" class="AccordionContent">I Am Accordion 2.</div>
+              <div><div id="accordion3" class="AccordionTitle"onselectstart="return false;">Accordion 3</div></div>
+              <div id="Accordion3Content" class="AccordionContent">I Am Accordion 3.</div>
+              <div><div id="accordion4" class="AccordionTitle"onselectstart="return false;">Accordion 4</div></div>
+              <div id="Accordion4Content" class="AccordionContent">I Am Accordion 4.</div>
+              <div><div  id="accordion5" class="AccordionTitle"onselectstart="return false;">Accordion 5</div></div>
+              <div id="Accordion5Content" class="AccordionContent">I Am Accordion 5.</div>
+            </div>
+            </div>
+        ]]>
+    </content>
+</widget>

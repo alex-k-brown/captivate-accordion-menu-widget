@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<widget spec="2" name="Certificate" description="Tabbed Menu for mobile devices." uri="www.liftmedia.io" version="1.0" type="static">
+    <authors>
+        <author name="Alex Brown" email="alex.brown@liftmedia.io" organization="Lift Media" uri="www.liftmedia.io">
+            <about>Web Developer and Instructional Design Specialist</about>
+        </author>
+    </authors>
+    <license name="CC" description="Creative Commons License" text="Feel free to use this" uri="http://creativecommons.org/licenses/by/3.0/"/>
+    <formats>
+        <format type="swf">
+            <!-- Name of SWF version -->
+            <content source="customAccordionMenu.swf"/>
+        </format>
+        <format type="html5">
+            <!-- Name of HTML5 version descriptor -->
+            <content source="customAccordionMenu_oam.xml"/>
+        </format>
+    </formats>
+</widget>
